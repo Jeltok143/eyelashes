@@ -1,0 +1,69 @@
+.orange {
+  color: rgba(252, 103, 68, 0.94);
+}
+
+.blue {
+  background-color: #4eb2f7;
+}
+
+.purple {
+  background-color: #c049f8;
+}
+
+.wave {
+  background-color: #817eff;
+}
+
+.pink {
+  background-color: #f74770;
+}
+
+.apple-watch {
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+
+  img {
+    width: 48px;
+    height: 48px;
+
+    @include breakpoint($phone) {
+      height: 36px;
+      width: 36px;
+    }
+  }
+}
+
+.swiper-button-prev {
+
+  img {
+    transform: rotate(180deg);
+  }
+}
+
+.swiper-pagination-bullet {
+	width: 18px;
+  height: 6px;
+  border-radius: 2.5px;
+  background-color: #e0e0e0;
+  background-color: red;
+}
+
+.swiper-pagination-bullet-active {
+	width: 18px;
+  height: 6px;
+  border-radius: 2.5px;
+  background-color: $orange;
+}
+
+.swiper-container {
+	padding-bottom: 54px;
+}

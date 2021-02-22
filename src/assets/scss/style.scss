@@ -1,0 +1,35 @@
+@import 'mixin';
+@import 'vendor/reset';
+@import 'vars';
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  color: $gray;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+// Blocks
+@import 'blocks/container.scss';
+@import 'blocks/menu.scss';
+@import 'blocks/helpers.scss';
+@import 'blocks/header.scss';
+@import 'blocks/page.scss';
+@import 'blocks/process.scss';
+@import 'blocks/works.scss';
+@import 'blocks/service.scss';
+@import 'blocks/team.scss';
+@import 'blocks/reviews.scss';
+@import 'blocks/partner.scss';
+@import 'blocks/footer.scss';
+
