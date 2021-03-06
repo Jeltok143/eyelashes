@@ -1,0 +1,52 @@
+.waiting {
+  padding-top: 16.8rem;
+  background-color: #4c3d74;
+  padding-bottom: 17.6rem;
+
+  @include breakpoint($tablet) {
+    padding-top: 9.1rem;
+    padding-bottom: 11rem;
+  }
+}
+
+.waiting__title {
+  font-size: 5rem;
+  text-align: center;
+  font-weight: 700;
+  color: $white;
+
+  @include breakpoint($tablet) {
+    font-size: 4.5rem;
+  }
+
+  @include breakpoint($phone) {
+    font-size: 3rem;
+  }
+}
+
+.waiting__pluses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4.1rem;
+  margin-bottom: 14.9rem;
+
+  @include breakpoint($laptop) {
+    margin-bottom: 8.5rem;
+  }
+
+  @include breakpoint($tablet) {
+    justify-content: center;
+  }
+}
+
+.waiting__about {
+  margin-top: 3.1rem;
+  display: flex;
+
+  @include breakpoint($tablet) {
+    flex-direction: column;
+    align-items: center;
+  }
+}

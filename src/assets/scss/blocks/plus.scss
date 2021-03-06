@@ -1,0 +1,31 @@
+.plus__item {
+  margin-right: 2.3rem;
+  margin-bottom: 3.3rem;
+
+  &:hover {
+    .plus__item-img {
+      transform: rotate(5deg) scale(1.1);
+    }
+  }
+}
+
+.plus__item-container {
+  display: flex;
+  align-items: center;
+
+  @include breakpoint($phone) {
+    margin-left: 2.3rem;
+  }
+}
+
+.plus__item-img {
+  margin-right: 2rem;
+  transition: transform .2s linear;
+}
+
+.plus__item-info {
+  color: #fff;
+  line-height: 1.3;
+  font-size: 1.6rem;
+  font-weight: 500;
+}

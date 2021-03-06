@@ -1,0 +1,73 @@
+.signup__btn,
+.payment__btn, 
+.stories__btn {
+  text-decoration: none;
+  color: $white;
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 1.5rem 6.3rem;
+  border-radius: 3rem;
+  background-color: #A387C4;
+  margin-right: 2.4rem;
+  border: 3px solid #A387C4;
+  transition: background-color .2s linear;
+
+  &:hover {
+    background-color: darken(#A387C4, 10%)
+  }
+}
+
+.signup__btn {
+
+  @include breakpoint($tablet) {
+    margin: 0;
+    text-align: center;
+    margin-bottom: 2rem;
+
+    &:not(:first-child) {
+      margin-top: 2rem;
+    }
+  }
+}
+
+.payment__btn {
+  position: absolute;
+  bottom: -25px;
+  text-transform: uppercase;
+
+  @include breakpoint($laptop) {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  @include breakpoint($phone) {
+    padding: 1.5rem 5.6rem;
+  }
+}
+
+.programm__btn,
+.stories__btn {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 700;
+  font-family: 'Futura', serif;
+  color: $white;
+  padding: 1.6rem 6.1rem;
+  border-radius: 3rem;
+  background-color: #4C3D74;
+  border: 3px solid #A387C4;
+  transition: background-color .2s linear;
+
+  &:hover {
+    background-color: darken(#A387C4, 10%)
+  }
+}
+
+.stories__btn {
+  padding: 1.6rem 4rem;
+  margin-left: 4rem;
+
+  @include breakpoint($phone) {
+    margin: 0 auto;
+  }
+}

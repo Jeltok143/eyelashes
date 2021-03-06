@@ -1,0 +1,33 @@
+.about__numbers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @include breakpoint($phone) {
+    justify-content: space-around;
+  }
+}
+
+.number__block {
+  width: 50%;
+  margin: 2rem 0rem;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  text-align: center;
+}
+
+.number__suptitle {
+  font-size: 5rem;
+  font-weight: 700;
+
+  @include breakpoint($phone) {
+    font-size: 3rem;
+  }
+}
+
+.number__subtitle {
+  margin-top: 0.7rem;
+  font-weight: 500;
+  font-size: 1.6rem;
+}

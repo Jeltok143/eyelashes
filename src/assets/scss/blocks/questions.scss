@@ -1,0 +1,12 @@
+.questions {
+  padding-top: 15.6rem;
+  padding-bottom: 17.3rem;
+
+  @include breakpoint($laptop) {
+    padding-bottom: 0;
+  }
+}
+
+.questions__inner {
+  position: relative;
+}

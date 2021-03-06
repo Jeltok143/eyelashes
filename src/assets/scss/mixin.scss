@@ -5,3 +5,10 @@
   }
 
 }
+
+@mixin hover($br) {
+
+  @media (min-width: $br) {
+    @content;
+  }
+}

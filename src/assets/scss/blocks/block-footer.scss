@@ -1,0 +1,90 @@
+.block__footer {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include breakpoint($laptop) {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.block__footer-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.block__footer-img {
+  position: absolute;
+  width: 243px;
+  height: 243px;
+  bottom: -182px;
+  right: 0;
+
+  @include breakpoint($laptop) {
+    position: static;
+    width: 215px;
+    height: 215px;
+    max-height: 100%;
+    object-fit: cover;
+    margin-top: 4rem;
+  }
+
+  &--second {
+    position: absolute;
+    width: 243px;
+    height: 243px;
+    bottom: -182px;
+    right: 125px;
+
+    @include breakpoint($laptop) {
+      position: static;
+      width: 215px;
+      height: 215px;
+      max-height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &--third {
+    position: absolute;
+    width: 243px;
+    height: 243px;
+    bottom: -175px;
+    right: 125px;
+
+    @include breakpoint($laptop) {
+      position: static;
+      width: 215px;
+      height: 215px;
+      max-height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.block__footer-icon {
+  width: 46px;
+  height: 46px;
+  margin-right: 2.8rem;
+
+  @include breakpoint($laptop) {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+}
+
+.block__footer-info {
+  display: flex;
+  flex-direction: column;
+  padding: .2rem 0rem;
+  margin-right: 3.5rem;
+  font-weight: 700;
+  font-size: 2rem;
+  color: $blue;
+
+  @include breakpoint($laptop) {
+    width: 100%;
+    margin-right: 0;
+  }
+}

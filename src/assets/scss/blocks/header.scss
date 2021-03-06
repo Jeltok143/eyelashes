@@ -1,0 +1,179 @@
+.header {
+  padding: 10.5rem 0rem 18.2rem;
+  background-color: #4C3D74;
+
+  @include breakpoint($desktop) {
+    padding: 8.9rem 0rem 10.7rem;
+  }
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__inner-menu {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.header__intensive {
+  cursor: pointer;
+}
+
+.intensive__title {
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.2rem;
+  color: $white;
+
+  @include breakpoint($tablet) {
+    font-size: 1.6rem;
+    line-height: 1.3; 
+  }
+}
+
+.header__nav {
+  display: flex;
+
+  @include breakpoint($tablet) {
+    display: none;
+  }
+}
+
+.nav__item {
+  text-decoration: none;
+  color: $white;
+  margin-left: 2.7rem;
+  font-weight: 700;
+  font-size: 1.4rem;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    width: 0%;
+    border-radius: 2px;
+    height: 2.5px;
+    background-color: #fff;
+    margin-top: 2px;
+    transition: width .2s linear;
+  }
+
+  &:hover {
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+.header__content {
+  display: flex;
+
+  @include breakpoint($tablet) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.header__content-info {
+
+  @include breakpoint($laptop) {
+    width: 60%;
+  }
+
+  @include breakpoint($tablet) {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.header__content-suptitle {
+  font-weight: 700;
+  font-size: 2rem;
+  color: $white;
+  margin-top: 2.9rem;
+  line-height: 2.5rem;
+  margin-top: 10.3rem;
+
+  &:first-child {
+    margin-top: 10.3rem;
+  }
+
+  @include breakpoint($desktop) {
+    margin-top: 7.3rem;
+
+    &:first-child {
+      margin-top: 7.3rem;
+    }
+  }
+
+  @include breakpoint($laptop) {
+    margin-top: 3rem;
+  }
+
+  @include breakpoint($phone) {
+    font-size: 1.6rem;
+    margin-top: 2.7rem;
+  }
+}
+
+.header__content-title {
+  font-size: 5rem;
+  font-weight: bold;
+  line-height: 6.6rem;
+  color: $white;
+  margin-top: 1.9rem;
+
+  @include breakpoint($laptop) {
+    font-size: 4.5rem;
+  }
+
+  @include breakpoint($tablet) {
+    margin-top: 2.7rem;
+    line-height: 4.9rem;
+    font-size: 4.5rem;
+  }
+
+  @include breakpoint($phone) {
+    font-size: 3rem;
+  }
+}
+
+.header__content-btn {
+  display: flex;
+  margin-top: 4.4rem;
+
+  @include breakpoint($tablet) {
+    flex-direction: column;
+    max-width: 30rem;
+    margin: 0 auto;
+    margin-top: 2.7rem;
+  }
+}
+
+.header__content-photo {
+
+  @include breakpoint($desktop) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.header__photo {
+  max-height: 100%;
+  object-fit: cover;
+
+  @include breakpoint($laptop) {
+    max-width: 295px;
+    max-height: 295px;
+  }
+}
